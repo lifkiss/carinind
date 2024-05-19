@@ -1,0 +1,26 @@
+.body3 {
+    position: relative;
+    height: 100%;
+    background: white;
+    font-family: cursive;
+    font-style: 3em;
+    color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper {
+    width: 240px;
+    height: 380px;
+    margin: 0 10px; /* Add margin for spacing */
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}

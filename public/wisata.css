@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.wisata-wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.wisata-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.wisata-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.wisata-section {
+    padding-block: 5rem 12rem;
+    max-height: 100%;
+    background-color: #55883B;;
+    min-height: 100vh;
+}
+
+
+.wisata-image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem; 
+    border-radius: 1rem;
+    height: 300px;
+}
+
+.wisata-img {
+    transform: 0.9s;
+    display: block;
+    min-width: 100%;
+    height: 100%;
+    transition: 0.5s;  
+    object-fit: cover;
+}
+
+.wisata-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, hsla(0,0%,0%,0) 50%, hsl(0,0%,0%) 125%);
+}
+
+.wisata-title {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: #E6F0DC;
+}
+
+.wisata-lokasi {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-size: 17px;
+    font-weight: 500;
+    color: #C1E899;
+}
+
+.wisata-location i {
+    font-size: 1rem;
+    color: #9A6735;
+}
+
+.wisata-image:hover .wisata-img {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .wisata-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
+#search-container-wisata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+  }
+  #search-container-wisata input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #E6F0DC;
+    padding: 1em 0.3em;
+    transition: 0.3s;
+  }
+  #search-container-wisata input::placeholder {
+    color: #E6F0DC;
+    transition: 0.3s;
+  }
+  #search-container-wisata input:focus {
+    border-bottom-color: #C1E899;
+    outline: none;
+    transition: 0.3s;
+    color: #E6F0DC;
+  }
+  #search-container-wisata button {
+    border: 2px solid #E6F0DC;
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: transparent;
+    color: #E6F0DC;
+    border-radius: 5px;
+    margin-top: 0.5em;
+    transition: 0.5s;
+  }
+  #search-container-wisata button:hover {
+    transition: 0.4s;
+    background-color: #C1E899;
+    color: #9A6735;
+  }
+  #buttons-wisata {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .button-value-wisata {
+    border: 2px solid #E6F0DC;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #E6F0DC;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: 0.2s;
+  }
+  .button-value-wisata:hover {
+    transition: 0.3s;
+    color: #9A6735;
+    background-color: #C1E899;
+  }
+  .button-value-wisata.active {
+    color: #9A6735;
+    background-color: #C1E899;
+  }
+  #products-wisata {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+  }
+  .card-wisata {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  .image-container-wisata {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+  .container-wisata {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container-wisata h5 {
+    font-weight: 500;
+  }
+  .hide-wisata {
+    display: none;
+  }
+
+  @media (max-width: 1500px) {
+    body {
+      background-color: #55883B;
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card-wisata {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products-wisata {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+
+    .button-value-wisata {
+      padding: 0.6em 1.4em;
+      margin: 3px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card-wisata {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products-wisata {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+
+    .button-value-wisata {
+      padding: 0.3em 0.7em;
+      margin: 1.5px;
+    }
+
+    .wisata-grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .wisata-container {
+    margin-left: 35%;
+    margin-right: 5%;
+}
+.wisata-section {
+  overflow-y: hidden !important;
+}
+body {
+  background-color: #55883B;
+  height: 100%;
+}
+  }  

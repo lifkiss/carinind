@@ -1,0 +1,126 @@
+.bodyWD {
+    overflow-y: hidden;
+}
+
+.post-header {
+    width: 100%;
+    height: 500px;
+    background-color: #55883B;
+    padding-top: 1rem;
+}
+
+.post-container {
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+    z-index: 2;
+    height: 100vh;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem !important;
+    z-index: 2;
+}
+
+.header-title {
+    width: 90%;
+    font-size: 2.6rem;
+    color: #C1E899;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header-img {
+    width: 100%;
+    height: 520px;
+    object-fit:cover;
+    object-position: center;
+}
+
+.post-content {
+    margin-top: 10rem !important;
+    padding-top: 2rem;
+    margin-bottom: 30px;
+}
+
+.sub-heading {
+    font-size: 1.2rem;
+}
+
+.post-text {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+.back-from-detail{
+    color: rgba(255, 255, 255, 0.234);
+    transition: 0.3s;
+    z-index: 0;
+    font-size: 150px;
+    top: 50px;
+    margin-left: 30px;
+    position: absolute;
+}
+
+.back-from-detail i {
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.234);
+}
+
+.back-from-detail:hover i{
+    color: #C1E899;
+    transition: 0.5s;
+    padding-right: 0.6rem;
+}
+
+.back-from-detail:hover{
+    color: #C1E899;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        margin-top: 3rem !important;
+    }
+    .header-img {
+        width: 470px;
+    }
+    .back-from-detail{
+        font-size: 120px;
+        top: 100px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-content {
+        margin-top: 1rem !important;
+    }
+    .header-img {
+        width: 370px;
+    }
+    .back-from-detail{
+        font-size: 100px;
+        top: 100px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 420px) {
+    .header-content {
+        margin-top: 1rem !important;
+    }
+    .header-img {
+        width: 370px;
+    }
+    .back-from-detail{
+        font-size: 80px;
+        top: 100px;
+        margin-left: 30px;
+    }
+}
